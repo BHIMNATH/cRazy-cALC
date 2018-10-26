@@ -43,4 +43,12 @@ class HomePageState extends State<HomePage> {
       sum = num1 ~/ num2;
     });
   }
+
+  void doClear() {
+    setState(() {
+      t1.text = "0";
+      t2.text = "0";
+      sum = 0;
+    });
+  }
 }
