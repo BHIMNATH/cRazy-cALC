@@ -12,4 +12,35 @@ class HomePageState extends State<HomePage> {
 
   final TextEditingController t1 = new TextEditingController(text: "0");
   final TextEditingController t2 = new TextEditingController(text: "0");
+  void doAddition() {
+    setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 + num2;
+    });
+  }
+
+  void doSub() {
+    setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 - num2;
+    });
+  }
+
+  void doMul() {
+    setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 * num2;
+    });
+  }
+
+  void doDiv() {
+    setState(() {
+      num1 = int.parse(t1.text);
+      num2 = int.parse(t2.text);
+      sum = num1 ~/ num2;
+    });
+  }
 }
