@@ -56,87 +56,106 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-        appBar: new AppBar(
+      appBar: new AppBar(
         title: new Text("cRAZY cALC"),
-    ),
-        body: new Container(
+      ),
+      body: new Container(
         padding: const EdgeInsets.all(40.0),
-    child: new Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: <Widget>[
-    new TextField(
-    keyboardType: TextInputType.number,
-    decoration: new InputDecoration(hintText: "Enter Number 1"),
-    controller: t1,
-    ),
-    new TextField(
-    keyboardType: TextInputType.number,
-    decoration: new InputDecoration(hintText: "Enter Number 2"),
-    controller: t2,
-    ),
-    new Padding(
-    padding: const EdgeInsets.only(top: 20.0),
-    ),
-    new Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    children: <Widget>[
-    new RaisedButton(
-    child: new Text(" + "),
-    color: Colors.pinkAccent,
-    textColor: Colors.white,
-    shape: new RoundedRectangleBorder(
-    borderRadius: new BorderRadius.circular(30.0)),
-    onPressed: doAddition,
-    ),
-    new RaisedButton(
-    child: new Text(" - "),
-    color: Colors.pinkAccent,
-    shape: new RoundedRectangleBorder(
-    borderRadius: new BorderRadius.circular(30.0)),
-    textColor: Colors.white,
-    onPressed: doSub,
-    ),
-    ],
-    ),
-    new Padding(
-    padding: const EdgeInsets.only(top: 20.0),
-    ),
-    new Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    children: <Widget>[
-    new RaisedButton(
-    child: new Text(" x "),
-    color: Colors.pinkAccent,
-    textColor: Colors.white,
-    shape: new RoundedRectangleBorder(
-    borderRadius: new BorderRadius.circular(30.0)),
-    onPressed: doMul,
-    ),
-    new RaisedButton(
-    child: new Text(" / "),
-    color: Colors.pinkAccent,
-    textColor: Colors.white,
-    shape: new RoundedRectangleBorder(
-    borderRadius: new BorderRadius.circular(30.0)),
-    onPressed: doDiv,
-    ),
-    ],
-    ),
-    new Padding(
-    padding: const EdgeInsets.only(top: 20.0),
-    ),
-    new Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: <Widget>[
-    new RaisedButton(
-    child: new Text("C"),
-    color: Colors.pinkAccent,
-    shape: new RoundedRectangleBorder(
-    borderRadius: new BorderRadius.circular(30.0)),
-    textColor: Colors.white,
-    onPressed: doClear,
-    ),
-    ],
-    ),
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new TextField(
+              keyboardType: TextInputType.number,
+              decoration: new InputDecoration(hintText: "Enter Number 1"),
+              controller: t1,
+            ),
+            new TextField(
+              keyboardType: TextInputType.number,
+              decoration: new InputDecoration(hintText: "Enter Number 2"),
+              controller: t2,
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                new RaisedButton(
+                  child: new Text(" + "),
+                  color: Colors.pinkAccent,
+                  textColor: Colors.white,
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  onPressed: doAddition,
+                ),
+                new RaisedButton(
+                  child: new Text(" - "),
+                  color: Colors.pinkAccent,
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  textColor: Colors.white,
+                  onPressed: doSub,
+                ),
+              ],
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                new RaisedButton(
+                  child: new Text(" x "),
+                  color: Colors.pinkAccent,
+                  textColor: Colors.white,
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  onPressed: doMul,
+                ),
+                new RaisedButton(
+                  child: new Text(" / "),
+                  color: Colors.pinkAccent,
+                  textColor: Colors.white,
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  onPressed: doDiv,
+                ),
+              ],
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new RaisedButton(
+                  child: new Text("C"),
+                  color: Colors.pinkAccent,
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.0)),
+                  textColor: Colors.white,
+                  onPressed: doClear,
+                ),
+              ],
+            ),
+            new Padding(
+              padding: const EdgeInsets.only(top: 20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new Text(
+                  "RESULT : $sum",
+                  style: new TextStyle(
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
