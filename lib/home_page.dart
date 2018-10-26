@@ -122,5 +122,21 @@ class HomePageState extends State<HomePage> {
     ),
     ],
     ),
+    new Padding(
+    padding: const EdgeInsets.only(top: 20.0),
+    ),
+    new Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+    new RaisedButton(
+    child: new Text("C"),
+    color: Colors.pinkAccent,
+    shape: new RoundedRectangleBorder(
+    borderRadius: new BorderRadius.circular(30.0)),
+    textColor: Colors.white,
+    onPressed: doClear,
+    ),
+    ],
+    ),
   }
 }
