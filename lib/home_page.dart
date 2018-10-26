@@ -112,5 +112,15 @@ class HomePageState extends State<HomePage> {
     borderRadius: new BorderRadius.circular(30.0)),
     onPressed: doMul,
     ),
+    new RaisedButton(
+    child: new Text(" / "),
+    color: Colors.pinkAccent,
+    textColor: Colors.white,
+    shape: new RoundedRectangleBorder(
+    borderRadius: new BorderRadius.circular(30.0)),
+    onPressed: doDiv,
+    ),
+    ],
+    ),
   }
 }
