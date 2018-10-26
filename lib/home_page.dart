@@ -59,5 +59,15 @@ class HomePageState extends State<HomePage> {
         appBar: new AppBar(
         title: new Text("cRAZY cALC"),
     ),
+        body: new Container(
+        padding: const EdgeInsets.all(40.0),
+    child: new Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+    new TextField(
+    keyboardType: TextInputType.number,
+    decoration: new InputDecoration(hintText: "Enter Number 1"),
+    controller: t1,
+    ),
   }
 }
