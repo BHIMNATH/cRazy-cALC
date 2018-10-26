@@ -1,6 +1,6 @@
-# flutter_apps
+# crazy_calc
 
-A new Flutter application.
+A  calculator made by using flutter
 
 ## Getting Started
 
