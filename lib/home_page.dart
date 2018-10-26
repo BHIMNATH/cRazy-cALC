@@ -51,4 +51,13 @@ class HomePageState extends State<HomePage> {
       sum = 0;
     });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold(
+        appBar: new AppBar(
+        title: new Text("cRAZY cALC"),
+    ),
+  }
 }
