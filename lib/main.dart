@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: "cRAZY cALC",
       theme: new ThemeData(primarySwatch: Colors.amber),
-//      home: new HomePage(),
+      home: new HomePage(),
     );
   }
 }
