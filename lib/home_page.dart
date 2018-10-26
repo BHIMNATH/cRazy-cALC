@@ -69,5 +69,24 @@ class HomePageState extends State<HomePage> {
     decoration: new InputDecoration(hintText: "Enter Number 1"),
     controller: t1,
     ),
+    new TextField(
+    keyboardType: TextInputType.number,
+    decoration: new InputDecoration(hintText: "Enter Number 2"),
+    controller: t2,
+    ),
+    new Padding(
+    padding: const EdgeInsets.only(top: 20.0),
+    ),
+    new Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: <Widget>[
+    new RaisedButton(
+    child: new Text(" + "),
+    color: Colors.pinkAccent,
+    textColor: Colors.white,
+    shape: new RoundedRectangleBorder(
+    borderRadius: new BorderRadius.circular(30.0)),
+    onPressed: doAddition,
+    ),
   }
 }
